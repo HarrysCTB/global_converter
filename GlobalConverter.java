@@ -113,7 +113,7 @@ public class GlobalConverter {
         else if (value.matches("[0-7 ]+")) return myReverseOctal(value);
         else if (value.matches("[0-9 ]+")) return myReverseDecimal(value);
         else if (value.matches("[0-9A-Fa-f ]+")) return myReverseHexadecimal(value);
-        else return "no matches";
+        else return value + " est déjà textuel";
     }
 
     public static void textHandling(String[] arguments) {
